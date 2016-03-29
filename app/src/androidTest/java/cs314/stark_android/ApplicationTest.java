@@ -1,4 +1,4 @@
-package cs314.a4;
+package cs314.stark_android;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
