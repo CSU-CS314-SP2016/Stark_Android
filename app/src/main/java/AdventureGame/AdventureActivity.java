@@ -1,4 +1,4 @@
-package cs314.a4.view;
+package AdventureGame;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,8 +9,6 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import aa.a3.model.AdventureGameModelFacade;
-
-
 
 public class AdventureActivity extends Activity {
 	
