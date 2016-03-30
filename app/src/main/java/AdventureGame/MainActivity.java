@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
 	
     private AdventureGameModelFacade model;
 
+    private String
     
     /** Called when the activity is first created. */
     @Override
@@ -62,7 +63,10 @@ public class MainActivity extends Activity {
             case R.id.grab:
                 myView.setText(text);
 
-            case R.id.drop:
+            case R.id.drop1:
+                myView.setText(text);
+
+            case R.id.drop2:
                 myView.setText(text);
  		break;
  		}

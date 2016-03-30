@@ -100,7 +100,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.01"
             android:onClick="myClickHandler"
-            android:text="@string/drop" />
+            android:text="@string/drop1" />
+
+            <Button
+                android:id="@+id/drop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:onClick="myClickHandler"
+                android:text="@string/drop2" />
 
             </LinearLayout>
     </LinearLayout>
