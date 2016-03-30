@@ -1,0 +1,37 @@
+Team members:
+	Zach Fuller
+	Jason Ritzman
+	Josh Foley
+
+Specific contributions by each person:
+	Zach Fuller - Refactored and overhauled project architecture for use in Android Studio
+	- Imported project into a new GitHub repository for Android development
+	- Redesigned GUI specified in activity_main.xml
+	Jason Ritzman -
+	Josh Foley  -
+
+Time (min) spent by each person on this assignment:
+	Zach Fuller -
+	Jason Ritzman -
+	Josh Foley -
+
+CSU Honor Pledge:
+I have not given, received, or used any unauthorized assistance.
+	Zach Fuller
+	Jason Ritzman
+	Josh Foley
+
+GUI Evaluation:
+Goal 1: Efficiency of the user interacting with the user interface
+  to complete a task based on typical tasks: 5 points
+  - Question 1:
+    Answer/Assessment:
+  - Question 2:
+    Answer/Assessment:
+
+Goal 2: Effectiveness of the user interface in causing the program to
+  follow the user's intent based on typical tasks: 5 points
+  - Question 1:
+    Answer/Assessment:
+  - Question 2:
+    Answer/Assessment:

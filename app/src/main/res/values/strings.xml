@@ -12,7 +12,8 @@
     <string name="up">Go Up</string>
     <string name="down">Go Down</string>
     <string name="grab">Grab</string>
-    <string name="drop">Drop</string>
+    <string name="drop1">Drop 1</string>
+    <string name="drop2">Drop 2</string>
     <string name="myView">My View</string>
     <string name="myThings">My Things</string>
     <string name="action_settings">Action</string>
