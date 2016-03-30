@@ -27,7 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
-        android:text="@string/north" />
+        android:text="@string/north"
+        android:onClick="myClickHandler"/>
 
     <Button
         android:id="@+id/goUp"
@@ -95,4 +96,5 @@
             android:layout_weight="0.01"
             android:text="@string/drop" />
 
-</LinearLayout>
+            </LinearLayout>
+    </LinearLayout>

@@ -1,5 +1,6 @@
 package AdventureGame;
 
+import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,9 +9,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import aa.a3.model.AdventureGameModelFacade;
 
-public class AdventureActivity extends Activity {
+public class MainActivity extends Activity {
 	
     private AdventureGameModelFacade model;
 
@@ -19,7 +19,7 @@ public class AdventureActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_main);
         
         //initialize connection to model
         model = new AdventureGameModelFacade();
@@ -31,11 +31,8 @@ public class AdventureActivity extends Activity {
          
          TextView myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
-      
         
     }
-    
-  /* comment out for now
     
  // This method is called at button click because we assigned the name to the
  	// "On Click property" of the button
@@ -43,9 +40,32 @@ public class AdventureActivity extends Activity {
  		switch (view.getId()) {
  		case R.id.goUp:
  			myView.setText(text);
+
+            case R.id.goDown:
+                myView.setText(text);
+
+            case R.id.goUp:
+                myView.setText(text);
+
+            case R.id.goNorth:
+                myView.setText(text);
+
+            case R.id.goSouth:
+                myView.setText(text);
+
+            case R.id.goEast:
+                myView.setText(text);
+
+            case R.id.goWest:
+                myView.setText(text);
+
+            case R.id.grab:
+                myView.setText(text);
+
+            case R.id.drop:
+                myView.setText(text);
  		break;
  		}
  	}
- 	*/
     
 }

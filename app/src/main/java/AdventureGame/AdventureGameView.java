@@ -28,52 +28,45 @@ Updated Feburary 17 2016
 
 import java.io.IOException;
 
-import javax.swing.*;
-
-
-import BreezySwing.*;
-
-public class AdventureGameView extends GBFrame{
-
-   /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-// Window objects --------------------------------------
-   JLabel welcomeLabel =
-     addLabel("Welcome to the Adventure Game " + 
-              "(inspired by an old game called the Colossal Cave Adventure)." +
-            " Java implementation Copyright (c) 1999-2012 by James M. Bieman",
-	    1,1,5,1);
-   
-   JLabel viewLable = addLabel ("Your View: ",2,1,1,1);
-   JTextArea viewArea = addTextArea("Start",3,1,4,3); 
-
-   JLabel carryingLable = addLabel ("You are carying: ",6,1,1,1);
-   JTextArea carryingArea = addTextArea("Nothing",7,1,4,3); 
-
-JLabel separator1 = addLabel
-   ("-----------------------------------------------------------------"
-	 , 10,1,4,1);
-
-
-   JLabel choiceLabel    = addLabel
-      ("Choose a direction, pick-up, or drop an item" ,11,1,5,1);
-
-   JButton grabButton = addButton ("Grab 1st item", 12, 5,1,1);
-   JButton grabButton2 = addButton ("Grab 2nd item", 13, 5,1,1);
-   JButton dropButton = addButton ("Drop 1st item", 14, 5,1,1);
-   JButton dropButton2 = addButton("Drop 2nd item", 15, 5,1,1);
-   
-   JButton northButton = addButton ("North", 12,2,1,1);
-   JButton southButton = addButton ("South", 14,2,1,1);
-   JButton eastButton = addButton ("East",   13,3,1,1);
-   JButton westButton = addButton ("West",   13,1,1,1);
-   JButton upButton = addButton ("Up", 12,3,1,1);
-   JButton downButton = addButton ("Down", 14,3,1,1);
+public class AdventureGameView {
 
    AdventureGameModelFacade model;
+
+    // Window objects --------------------------------------
+
+    /* JLabel welcomeLabel =
+            addLabel("Welcome to the Adventure Game " +
+                            "(inspired by an old game called the Colossal Cave Adventure)." +
+                            " Java implementation Copyright (c) 1999-2012 by James M. Bieman",
+                    1,1,5,1);
+
+    JLabel viewLable = addLabel ("Your View: ",2,1,1,1);
+    JTextArea viewArea = addTextArea("Start",3,1,4,3);
+
+    JLabel carryingLable = addLabel ("You are carying: ",6,1,1,1);
+    JTextArea carryingArea = addTextArea("Nothing",7,1,4,3);
+
+    JLabel separator1 = addLabel
+            ("-----------------------------------------------------------------"
+                    , 10,1,4,1);
+
+
+    JLabel choiceLabel    = addLabel
+            ("Choose a direction, pick-up, or drop an item" ,11,1,5,1);
+
+    JButton grabButton = addButton ("Grab 1st item", 12, 5,1,1);
+    JButton grabButton2 = addButton ("Grab 2nd item", 13, 5,1,1);
+    JButton dropButton = addButton ("Drop 1st item", 14, 5,1,1);
+    JButton dropButton2 = addButton("Drop 2nd item", 15, 5,1,1);
+
+    JButton northButton = addButton ("North", 12,2,1,1);
+    JButton southButton = addButton ("South", 14,2,1,1);
+    JButton eastButton = addButton ("East",   13,3,1,1);
+    JButton westButton = addButton ("West",   13,1,1,1);
+    JButton upButton = addButton ("Up", 12,3,1,1);
+    JButton downButton = addButton ("Down", 14,3,1,1);
+
+    AdventureGameModelFacade model; */
    
    // Constructor-----------------------------------------------
 
@@ -84,14 +77,15 @@ JLabel separator1 = addLabel
 		} catch (IOException e) {
 			System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
 		}
-      viewArea.setEditable (false);
-      carryingArea.setEditable (false);
+      viewArea.setEditable (false); //TODO
+      carryingArea.setEditable (false); //TODO
       displayCurrentInfo();
    } 
    
    
    // buttonClicked method--------------------------------------
 
+    //TODO - CONVERT TO TAKE A STRING FORWARDED FROM myClickHandler
    public void buttonClicked (JButton buttonObj){
       if (buttonObj == upButton){
     	  model.goUp();
@@ -123,7 +117,6 @@ JLabel separator1 = addLabel
 			if (buttonObj == grabButton2 && model.thePlayer.getLoc().getRoomContents().length == 2) grab(2);
 			carryingArea.setText(model.getItems());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
       }
@@ -138,6 +131,7 @@ JLabel separator1 = addLabel
        
    // Private methods-------------------------------------------
 
+    //TODO
    private void displayCurrentInfo(){
 	   viewArea.setText(model.getView());
 	   carryingArea.setText(model.getItems());
@@ -158,6 +152,7 @@ JLabel separator1 = addLabel
     	model.drop(itemNum);
    }
 
+    //TODO
    public static void main (String[] args){
 	   JFrame view = new AdventureGameView();
 	   view.setSize (800, 600); /* was 400, 250  */             
