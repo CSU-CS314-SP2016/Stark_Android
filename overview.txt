@@ -7,7 +7,10 @@ Specific contributions by each person:
 	Zach Fuller - Refactored and overhauled project architecture for use in Android Studio
 	- Imported project into a new GitHub repository for Android development
 	- Redesigned GUI specified in activity_main.xml
-	Jason Ritzman -
+	Jason Ritzman - Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (2 hours)
+	- Added Github for Windows and configured for Android Studio (1 hour)
+	- Imported Stark_Android project from zip file for functionality in Android Studio (1 hour)
+	- Created Branch and edited Overview.txt, A4-US-1A.txt, A4-US-1B.txt (2 hours)
 	Josh Foley  -
 
 Time (min) spent by each person on this assignment:
@@ -20,6 +23,10 @@ I have not given, received, or used any unauthorized assistance.
 	Zach Fuller
 	Jason Ritzman
 	Josh Foley
+
+- Test information: 1 pt
+  - Number of new tests written, number of defects found, number of defects fixed
+  - Total number of tests run, number passed, number of defects found, number of defects fixed
 
 GUI Evaluation:
 Goal 1: Efficiency of the user interacting with the user interface
