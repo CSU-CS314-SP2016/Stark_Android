@@ -1,0 +1,42 @@
+Team members:
+	Zach Fuller
+	Jason Ritzman
+	Josh Foley
+
+Specific contributions by each person:
+	Zach Fuller - Wrote tests for Player.java, Item.test
+		- Wrote comments for all testing methods
+	Jason Ritzman 	- Refactored code to cs314_A4 and cs314_A4Test, added User Story A4-US.txt (1/2 hour)
+					- Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (2 hours)
+	Josh Foley  - Wrote JUnit tests for Room.java Door.java and CaveSite.java
+
+Time (min) spent by each person on this assignment:
+	Zach Fuller - 10 hours
+	Jason Ritzman - 2.5 hours
+	Josh Foley - 7 hours
+
+CSU Honor Pledge:
+I have not given, received, or used any unauthorized assistance.
+	Zach Fuller
+	Jason Ritzman
+	Josh Foley
+
+Coverage report:
+	BB tests
+		% 98 class, %100 method, %99 line %97 branch
+		No defects found
+	WB tests
+		%100 class, 100% method, 100% line, 100% branch
+		No defects found
+
+All branches had 100% coverage except for classes Player and AdventureGameView
+
+class Player did not reach 100% coverage because of its method "drop." Within drop,
+there is a switch statement for an int, itemNum, however the program
+doesn't advance to the switch statement if itemNum is less than 1 or greater than 2.
+There is a branch where the itemNum is less than 1 or greater than 2, but we can
+never get to it because of the way the previous if statement is structured.
+
+class AdventureGameView did not reach 100% coverage because of a try/catch statement
+within its constructor that uses an IOException as a case. This IOException branch
+is not covered because we cannot simulate an IOException in this testing environment.
