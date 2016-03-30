@@ -7,7 +7,11 @@ Acceptance Criteria (AC):
 	3. Answering all 4 questions generates data that can drive design changes in the GUI, and that can provide rationale for design improvement. No question can be answered with a simple "yes" or "no" answer.
 	4. Meet 'Definition of Done' (DoD), below.
 
-	Definition of Done:
+Tasks: 3 SP
+    -
+
+
+Definition of Done:
     For all user stories:
     - GitHub main branch code runs with no warnings and a user can
        access a GUI to execute all commands that were possible from the command line version
