@@ -95,4 +95,5 @@
             android:layout_weight="0.01"
             android:text="@string/drop" />
 
-</LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
