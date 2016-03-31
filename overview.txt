@@ -15,7 +15,7 @@ Specific contributions by each person:
 
 Time (min) spent by each person on this assignment:
 	Zach Fuller -
-	Jason Ritzman - 6 hours
+	Jason Ritzman - 8 hours
 	Josh Foley -
 
 CSU Honor Pledge:
@@ -31,14 +31,14 @@ I have not given, received, or used any unauthorized assistance.
 GUI Evaluation:
 Goal 1: Efficiency of the user interacting with the user interface
   to complete a task based on typical tasks: 5 points
-  - Question 1:
+  - Question 1: Explore all rooms
     Answer/Assessment:
-  - Question 2:
+  - Question 2: Find treasure and bring it out of cave
     Answer/Assessment:
 
 Goal 2: Effectiveness of the user interface in causing the program to
   follow the user's intent based on typical tasks: 5 points
-  - Question 1:
+  - Question 1: Go in desired direction
     Answer/Assessment:
-  - Question 2:
+  - Question 2: Pick up and drop desired items
     Answer/Assessment:
