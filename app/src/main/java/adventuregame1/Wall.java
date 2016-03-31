@@ -27,9 +27,11 @@ package adventuregame1;
 
 public class Wall implements CaveSite {
 
- public void enter(Player p)
-	     {
-   System.out.println("Ouch! That hurts.");
+    String caveMessage = "Ouch! That hurts.";
+
+    public String enter(Player p) {
+
+        return caveMessage;
  }
 
 }

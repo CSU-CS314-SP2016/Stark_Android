@@ -18,6 +18,8 @@ package adventuregame1;
 
 // interface CaveSite
 public interface CaveSite{
-  void enter(Player p);
+
+    String enter(Player p);
+
 }
 
