@@ -6,8 +6,13 @@ Acceptance Criteria (AC):
 	4. All previous JUnit tests are run and pass.
 	5. Meet 'Definition of Done' (DoD), below.
 
-Tasks:
-
+Tasks (estimation/actual time)
+    (2 hours/2 hours) Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (All Team Members)
+    (1 hour/1 hour) Added Github for Windows and configured for Android Studio (All Team Members)
+    (2 hours/3 hours) Refactor and overhaul for use in Android Studio (Zach Fuller)
+    (1 hour/1 hour) Imported project into a new GitHub repository for Android development (Zach Fuller)
+    (1 hour/1 hour) Imported Stark_Android project from zip file for functionality in Android Studio (Jason Ritzman, Josh Foley)
+    (1 hour/2 hours) Edit overview.txt and user stories (All Team Members)
 
 Definition of Done:
     - GitHub main branch code runs with no warnings and a user can

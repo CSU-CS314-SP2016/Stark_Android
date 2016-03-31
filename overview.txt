@@ -15,7 +15,7 @@ Specific contributions by each person:
 
 Time (min) spent by each person on this assignment:
 	Zach Fuller -
-	Jason Ritzman -
+	Jason Ritzman - 6 hours
 	Josh Foley -
 
 CSU Honor Pledge:
@@ -26,7 +26,7 @@ I have not given, received, or used any unauthorized assistance.
 
 - Test information: 1 pt
   - Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
-  - Total number of tests run, number passed, number of defects found, number of defects fixed
+  - Total number of tests run - 0, number passed - NA, number of defects found - NA, number of defects fixed - NA
 
 GUI Evaluation:
 Goal 1: Efficiency of the user interacting with the user interface
