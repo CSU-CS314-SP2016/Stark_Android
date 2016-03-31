@@ -64,6 +64,7 @@ public class AdventureGameModelFacade {
   public void goEast(){
 	  thePlayer.go(2);
 	  roomDesc = thePlayer.look();
+	  getView();
   }
       
   public void goWest(){
