@@ -1,5 +1,17 @@
 package AdventureGame;
 
+/**
+    class MainActivity: reimplement methods from AdventureGameView for Android use
+
+    @authors
+        Zach Fuller
+        Josh Foley
+        Jason Ritzman
+
+    Updated on March 30 2016
+    - Implemented onCreate, myClickHandler, and legacy AdventureGameView methods
+
+**/
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,6 +28,11 @@ public class MainActivity extends Activity {
 
     private AdventureGameModelFacade model;
 
+    String viewText;
+
+    TextView myView;
+    TextView myItems;
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,50 +46,73 @@ public class MainActivity extends Activity {
            // System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
         }
 
-        String viewText = model.getView();
+        myView = (TextView) findViewById(R.id.roomView);
+        viewText = model.getView();
 
         // Get initial room view, and see my items.
-         TextView myView = (TextView) findViewById(R.id.roomView);
+
          myView.setText(viewText);
 
-         TextView myItems = (TextView) findViewById(R.id.myItems);
+         myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
 
     }
 
  // This method is called at button click because we assigned the name to the
  	// "On Click property" of the button
- 	public void myClickHandler(View view) {
+ 	//TODO
+    public void myClickHandler(View view) {
         switch (view.getId()) {
  		case R.id.goUp:
- 			roomView.setText(text);
+ 			model.goUp();
+            myView.setText(model.getView());
 
         case R.id.goDown:
-            roomView.setText(text);
+            model.goDown();
+            myView.setText(model.getView());
 
         case R.id.goNorth:
-            myView.setText(text);
+            model.goNorth();
+            myView.setText(model.getView());
 
         case R.id.goSouth:
-            myView.setText(text);
+            model.goSouth();
+            myView.setText(model.getView());
 
         case R.id.goEast:
-            myView.setText(text);
+            model.goEast();
+            myView.setText(model.getView());
 
         case R.id.goWest:
-            myView.setText(text);
+            model.goWest();
+            myView.setText(model.getView());
 
-        case R.id.grab:
-            myView.setText(text);
+        case R.id.grab1:
+            model.grab(1);
+            myItems.setText(model.getItems());
+
+        case R.id.grab2:
+            model.grab(2);
+            myItems.setText(model.getItems());
 
         case R.id.drop1:
-            myView.setText(text);
+            model.drop(1);
+            myItems.setText(model.getItems());
 
         case R.id.drop2:
-            myView.setText(text);
+            model.drop(2);
+            myItems.setText(model.getItems());
 
         break;
  		}
  	}
+
+    private void displayCurrentInfo(){
+        myView.setText(model.getView());
+        myItems.setText(model.getItems());
+
+    }
+
+
 
 }
