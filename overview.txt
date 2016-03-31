@@ -25,7 +25,7 @@ I have not given, received, or used any unauthorized assistance.
 	Josh Foley
 
 - Test information: 1 pt
-  - Number of new tests written, number of defects found, number of defects fixed
+  - Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
   - Total number of tests run, number passed, number of defects found, number of defects fixed
 
 GUI Evaluation:
