@@ -19,11 +19,11 @@ import org.junit.After;
 
 import java.io.IOException;
 
-import AdventureGame.Adventure;
-import AdventureGame.AdventureGameModelFacade;
-import AdventureGame.Item;
-import AdventureGame.Player;
-import AdventureGame.Room;
+import adventuregame.Adventure;
+import adventuregame.AdventureGameModelFacade;
+import adventuregame.Item;
+import adventuregame.Player;
+import adventuregame.Room;
 
 public class AdventureGameModelFacadeTest {
 
