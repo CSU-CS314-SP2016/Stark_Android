@@ -1,4 +1,4 @@
-package AdventureGame;
+package adventuregame1;
 
 
 /**  Adventure Game  Program Code
