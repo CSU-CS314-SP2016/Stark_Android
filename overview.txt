@@ -4,9 +4,10 @@ Team members:
 	Josh Foley
 
 Specific contributions by each person:
-	Zach Fuller - Refactored and overhauled project architecture for use in Android Studio
-	- Imported project into a new GitHub repository for Android development
-	- Redesigned GUI specified in activity_main.xml
+	Zach Fuller - Refactored and overhauled project architecture for use in Android Studio (6 hours)
+	- Imported project into a new GitHub repository for Android development (1 hour)
+	- Redesigned GUI specified in activity_main.xml (2 hours)
+	- Implemented MainActivity.java methods for button behavior (9 hours)
 	Jason Ritzman - Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (2 hours)
 	- Added Github for Windows and configured for Android Studio (1 hour)
 	- Imported Stark_Android project from zip file for functionality in Android Studio (1 hour)
@@ -14,7 +15,7 @@ Specific contributions by each person:
 	Josh Foley  - Linked buttons of the gui to run the original java code. Got game running on android phone.
 
 Time (hours) spent by each person on this assignment:
-	Zach Fuller -
+	Zach Fuller - 18 hours
 	Jason Ritzman - 8 hours
 	Josh Foley -	15 hours
 
