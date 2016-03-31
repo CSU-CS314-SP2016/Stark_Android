@@ -53,7 +53,8 @@ public class MainActivity extends Activity {
          myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
 
-        setContentView(R.layout.activity_main);
+        displayCurrentInfo();
+
 
     }
 
@@ -66,44 +67,55 @@ public class MainActivity extends Activity {
  			model.goUp();
             myView.setText(model.getView());
 
+
         case R.id.goDown:
             model.goDown();
             myView.setText(model.getView());
+
 
         case R.id.goNorth:
             model.goNorth();
             myView.setText(model.getView());
 
+
         case R.id.goSouth:
             model.goSouth();
             myView.setText(model.getView());
+
 
         case R.id.goEast:
             model.goEast();
             myView.setText(model.getView());
 
+
         case R.id.goWest:
             model.goWest();
             myView.setText(model.getView());
+
 
         case R.id.grab1:
             model.grab(1);
             myItems.setText(model.getItems());
 
+
         case R.id.grab2:
             model.grab(2);
             myItems.setText(model.getItems());
+
 
         case R.id.drop1:
             model.drop(1);
             myItems.setText(model.getItems());
 
+
         case R.id.drop2:
             model.drop(2);
             myItems.setText(model.getItems());
 
+
         break;
  		}
+        displayCurrentInfo();
  	}
 
     private void displayCurrentInfo(){
