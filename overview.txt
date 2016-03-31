@@ -13,7 +13,7 @@ Specific contributions by each person:
 	- Created Branch and edited Overview.txt, A4-US-1A.txt, A4-US-1B.txt (2 hours)
 	Josh Foley  -
 
-Time (min) spent by each person on this assignment:
+Time (hours) spent by each person on this assignment:
 	Zach Fuller -
 	Jason Ritzman - 8 hours
 	Josh Foley -
