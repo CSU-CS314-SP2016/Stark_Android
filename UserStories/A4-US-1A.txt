@@ -1,4 +1,5 @@
-1. Split story A: As a CS 314 student, I want to create a new GUI as a new game view, so that the game will run on an Android device. (See the Notes in the Description section below for additional information you need to deliver the acceptance criteria listed below.)
+Split Story 1A (10 SP): As a CS 314 student, I want to create a new GUI as a new game view, so that the game will run on an Android device. (See the Notes in the Description section below for additional information you need to deliver the acceptance criteria listed below.)
+
 Acceptance Criteria (AC):
 	1. The new interface works on the Android platform.
 	2. The game retains its Model-View separation design: All 'view' software only accesses functional parts of the game through the AdventureGameModelFacade class.
@@ -6,8 +7,16 @@ Acceptance Criteria (AC):
 	4. All previous JUnit tests are run and pass.
 	5. Meet 'Definition of Done' (DoD), below.
 
-Tasks:
-
+Tasks: 10 SP (estimation/actual time)
+    (1 hour/2 hours) Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (All Team Members)
+    (1 hour/1 hour) Added Github for Windows and configured for Android Studio (All Team Members)
+    (1 hour/3 hours) Refactor and overhaul for use in Android Studio (Zach Fuller)
+    (1 hour/1 hour) Imported project into a new GitHub repository for Android development (Zach Fuller)
+    (1 hour/1 hour) Imported Stark_Android project from zip file for functionality in Android Studio (Jason Ritzman, Josh Foley)
+    (1 hour/2 hours) Edit overview.txt and user stories (All Team Members)
+    (2 hours/unknown) Implement new interface for Android Platform (Zach Fuller, Josh Foley)
+    (1 hour/unknown) New test written and pass, defects fixed
+    (1 hour/unknown) Previous JUnit test are run and pass
 
 Definition of Done:
     - GitHub main branch code runs with no warnings and a user can
