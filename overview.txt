@@ -32,14 +32,14 @@ I have not given, received, or used any unauthorized assistance.
 GUI Evaluation:
 Goal 1: Efficiency of the user interacting with the user interface
   to complete a task based on typical tasks: 5 points
-  - Question 1: Explore all rooms
-    Answer/Assessment:
-  - Question 2: Find treasure and bring it out of cave
-    Answer/Assessment:
+  - Question 1: As a user, what could be improved in regards to player information?
+    Answer/Assessment: Information about adjacent rooms displayed in the GUI would be helpful in navigating the cave system.
+  - Question 2: What could be improved about grabbing and dropping items?
+    Answer/Assessment: Instead of having 4 separate buttons, have 2 buttons with further options given when clicked.
 
 Goal 2: Effectiveness of the user interface in causing the program to
   follow the user's intent based on typical tasks: 5 points
-  - Question 1: Go in desired direction
-    Answer/Assessment:
-  - Question 2: Pick up and drop desired items
-    Answer/Assessment:
+  - Question 1: Is the behavior when dropping or grabbing items that don't exist desirable behavior?
+    Answer/Assessment: Toast messages are a nice touch - better than posting to the TextView.
+  - Question 2: What could be improved about the user interface in regards to movement and item manipulation?
+    Answer/Assessment: Directional buttons could be arranged in a fashion that makes more graphical sense
