@@ -53,7 +53,6 @@ public class MainActivity extends Activity {
          myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
 
-        displayCurrentInfo();
 
 
     }
@@ -65,55 +64,53 @@ public class MainActivity extends Activity {
         switch (view.getId()) {
  		case R.id.goUp:
  			model.goUp();
-            myView.setText(model.getView());
-
+            break;
 
         case R.id.goDown:
             model.goDown();
-            myView.setText(model.getView());
+            break;
 
 
-        case R.id.goNorth:
+            case R.id.goNorth:
             model.goNorth();
-            myView.setText(model.getView());
+                break;
 
 
-        case R.id.goSouth:
+            case R.id.goSouth:
             model.goSouth();
-            myView.setText(model.getView());
+                break;
 
 
-        case R.id.goEast:
+            case R.id.goEast:
             model.goEast();
-            myView.setText(model.getView());
+                break;
 
 
-        case R.id.goWest:
+            case R.id.goWest:
             model.goWest();
-            myView.setText(model.getView());
+                break;
 
 
-        case R.id.grab1:
+            case R.id.grab1:
             model.grab(1);
-            myItems.setText(model.getItems());
+                break;
 
 
-        case R.id.grab2:
+            case R.id.grab2:
             model.grab(2);
-            myItems.setText(model.getItems());
+                break;
 
 
-        case R.id.drop1:
+            case R.id.drop1:
             model.drop(1);
-            myItems.setText(model.getItems());
+                break;
 
 
-        case R.id.drop2:
+            case R.id.drop2:
             model.drop(2);
-            myItems.setText(model.getItems());
 
 
-        break;
+            break;
  		}
         displayCurrentInfo();
  	}
