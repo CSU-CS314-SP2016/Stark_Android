@@ -11,12 +11,12 @@ Specific contributions by each person:
 	- Added Github for Windows and configured for Android Studio (1 hour)
 	- Imported Stark_Android project from zip file for functionality in Android Studio (1 hour)
 	- Created Branch and edited Overview.txt, A4-US-1A.txt, A4-US-1B.txt (2 hours)
-	Josh Foley  -
+	Josh Foley  - Linked buttons of the gui to run the original java code. Got game running on android phone.
 
 Time (hours) spent by each person on this assignment:
 	Zach Fuller -
 	Jason Ritzman - 8 hours
-	Josh Foley -
+	Josh Foley -	15 hours
 
 CSU Honor Pledge:
 I have not given, received, or used any unauthorized assistance.
