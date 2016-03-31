@@ -1,4 +1,4 @@
-package AdventureGame;
+package adventuregame1;
 
 /**
     class MainActivity: reimplement methods from AdventureGameView for Android use
@@ -17,9 +17,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.Toast;
 
 import java.io.IOException;
 
@@ -55,6 +52,8 @@ public class MainActivity extends Activity {
 
          myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
+
+        setContentView(R.layout.activity_main);
 
     }
 

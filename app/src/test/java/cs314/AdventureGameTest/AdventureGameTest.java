@@ -25,7 +25,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import AdventureGame.AdventureGame;
+import adventuregame1.AdventureGame;
 
 public class AdventureGameTest {
 	

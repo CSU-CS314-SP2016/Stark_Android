@@ -1,4 +1,4 @@
-package AdventureGame;
+package adventuregame1;
 
 /**  Adventure Game  Program Code
      Copyright (c) 1999 James M. Bieman
@@ -7,17 +7,17 @@ package AdventureGame;
      To run:     java AdventureGame
 
      The main routine is AdventureGame.main
-	
-	/** 
- 	* @authors 
- 	* Zach Fuller
- 	* Josh Foley
- 	* Jason Ritzman
- 
- 	**/
-// class Key.
+**/
 
-public class Key extends Item {
-	
+/** 
+ * @authors 
+ * Zach Fuller
+ * Josh Foley
+ * Jason Ritzman
+**/
+
+// interface CaveSite
+public interface CaveSite{
+  void enter(Player p);
 }
 

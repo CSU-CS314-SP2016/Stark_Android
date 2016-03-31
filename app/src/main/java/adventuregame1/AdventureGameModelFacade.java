@@ -1,4 +1,4 @@
-package AdventureGame;
+package adventuregame1;
 
 /**  Adventure Game  Program Code
 Copyright (c) 1999 James M. Bieman
@@ -18,7 +18,6 @@ Updated Feburary 17 2016
 
 **/
 
-import java.io.BufferedReader;
 import java.io.IOException;
 
 public class AdventureGameModelFacade {
