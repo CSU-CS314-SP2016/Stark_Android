@@ -1,4 +1,4 @@
-package AdventureGame;
+package adventuregame1;
 
 /**  Adventure Game  Program Code
 Copyright (c) 1999 James M. Bieman
@@ -17,6 +17,8 @@ Updated February 4 2016
 Updated Feburary 17 2016
 - added 2nd drop and grab buttons to GUI and 
 - implemented drop and grab methods with ints
+ Updated March 30 2016
+ - unimplemented methods causing errors in Android
 **/
 
 /** 
@@ -70,72 +72,72 @@ public class AdventureGameView {
    
    // Constructor-----------------------------------------------
 
-   public AdventureGameView(){
-	      setTitle ("Adventure Game");
-	      try {
-			model = new AdventureGameModelFacade();
-		} catch (IOException e) {
-			System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
-		}
-      viewArea.setEditable (false); //TODO
-      carryingArea.setEditable (false); //TODO
-      displayCurrentInfo();
-   } 
+//   public AdventureGameView(){
+//	      setTitle ("Adventure Game");
+//	      try {
+//			model = new AdventureGameModelFacade();
+//		} catch (IOException e) {
+//			System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
+//		}
+//      viewArea.setEditable (false); //TODO
+//      carryingArea.setEditable (false); //TODO
+//      displayCurrentInfo();
+//   }
    
    
    // buttonClicked method--------------------------------------
 
     //TODO - CONVERT TO TAKE A STRING FORWARDED FROM myClickHandler
-   public void buttonClicked (JButton buttonObj){
-      if (buttonObj == upButton){
-    	  model.goUp();
-      }
-
-      else if (buttonObj == downButton){
-    	  model.goDown();
-      }
-	 
-      else if (buttonObj == northButton){
-    	  model.goNorth();
-      }
-
-      else if (buttonObj == southButton){
-    	  model.goSouth();
-      }
-
-      else if (buttonObj == eastButton){
-    	  model.goEast();
-      }
-
-      else if (buttonObj == westButton){
-    	  model.goWest();
-      }
-
-      else if (buttonObj == grabButton || buttonObj == grabButton2){
-    	  try {
-			if (buttonObj == grabButton) grab(1);
-			if (buttonObj == grabButton2 && model.thePlayer.getLoc().getRoomContents().length == 2) grab(2);
-			carryingArea.setText(model.getItems());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-      }
-      else if (buttonObj == dropButton || buttonObj == dropButton2){
-    	  if (buttonObj == dropButton) drop(1);
-    	  System.out.println(model.thePlayer.numItemsCarried());
-    	  if (buttonObj == dropButton2) drop(2);
-      }
-
-      displayCurrentInfo();
-  }
+//   public void buttonClicked (JButton buttonObj){
+//      if (buttonObj == upButton){
+//    	  model.goUp();
+//      }
+//
+//      else if (buttonObj == downButton){
+//    	  model.goDown();
+//      }
+//
+//      else if (buttonObj == northButton){
+//    	  model.goNorth();
+//      }
+//
+//      else if (buttonObj == southButton){
+//    	  model.goSouth();
+//      }
+//
+//      else if (buttonObj == eastButton){
+//    	  model.goEast();
+//      }
+//
+//      else if (buttonObj == westButton){
+//    	  model.goWest();
+//      }
+//
+//      else if (buttonObj == grabButton || buttonObj == grabButton2){
+//    	  try {
+//			if (buttonObj == grabButton) grab(1);
+//			if (buttonObj == grabButton2 && model.thePlayer.getLoc().getRoomContents().length == 2) grab(2);
+//			carryingArea.setText(model.getItems());
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+//      }
+//      else if (buttonObj == dropButton || buttonObj == dropButton2){
+//    	  if (buttonObj == dropButton) drop(1);
+//    	  System.out.println(model.thePlayer.numItemsCarried());
+//    	  if (buttonObj == dropButton2) drop(2);
+//      }
+//
+//      displayCurrentInfo();
+//  }
        
    // Private methods-------------------------------------------
 
     //TODO
-   private void displayCurrentInfo(){
-	   viewArea.setText(model.getView());
-	   carryingArea.setText(model.getItems());
-   }
+//   private void displayCurrentInfo(){
+//	   viewArea.setText(model.getView());
+//	   carryingArea.setText(model.getItems());
+//   }
 
     // Left as an exercise. 
    public void grab(int itemNum) throws IOException {
@@ -152,10 +154,9 @@ public class AdventureGameView {
     	model.drop(itemNum);
    }
 
-    //TODO
-   public static void main (String[] args){
-	   JFrame view = new AdventureGameView();
-	   view.setSize (800, 600); /* was 400, 250  */             
-	   view.setVisible(true);    
-   }                    
+//   public static void main (String[] args){
+//	   JFrame view = new AdventureGameView();
+//	   view.setSize (800, 600); /* was 400, 250  */
+//	   view.setVisible(true);
+//   }
 }

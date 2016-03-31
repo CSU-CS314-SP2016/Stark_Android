@@ -87,6 +87,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
+            <Button
+                android:id="@+id/grab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:onClick="myClickHandler"
+                android:text="@string/grab1" />
+            <Button
+                android:id="@+id/grab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.01"
+                android:onClick="myClickHandler"
+                android:text="@string/grab2" />
+
         <Button
                 android:id="@+id/drop1"
                 android:layout_width="wrap_content"
@@ -94,14 +109,6 @@
                 android:layout_weight="0.01"
                 android:onClick="myClickHandler"
                 android:text="@string/drop1" />
-
-        <Button
-            android:id="@+id/grab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.01"
-            android:onClick="myClickHandler"
-            android:text="@string/grab" />
 
             <Button
                 android:id="@+id/drop2"
