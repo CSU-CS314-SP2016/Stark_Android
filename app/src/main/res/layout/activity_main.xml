@@ -5,39 +5,17 @@
     android:layout_height="wrap_content"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/roomView"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:text="@string/myView" />
-
-    <TextView
-        android:id="@+id/myItems"
-        android:layout_width="match_parent"
-        android:layout_height="135dp"
-        android:text="@string/myThings" >
-
-    </TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     <Button
-        android:id="@+id/goNorth"
+        android:id="@+id/newGameNormal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
-        android:text="@string/north"
+        android:text="@string/normal"
         android:onClick="myClickHandler"/>
-
-    <Button
-        android:id="@+id/goUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.01"
-        android:text="@string/up"
-        android:onClick="myClickHandler"/>
-
 
 </LinearLayout>
 
@@ -45,78 +23,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     <Button
-        android:id="@+id/goWest"
+        android:id="@+id/newGameHard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
-        android:text="@string/west"
-        android:onClick="myClickHandler"/>
-
-    <Button
-        android:id="@+id/goEast"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.01"
-        android:text="@string/east"
+        android:text="@string/hard"
         android:onClick="myClickHandler"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-
-        <Button
-            android:id="@+id/goSouth"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.01"
-            android:onClick="myClickHandler"
-            android:text="@string/south" />
-
-        <Button
-        android:id="@+id/goDown"
+    <Button
+        android:id="@+id/loadGame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.01"
-        android:onClick="myClickHandler"
-        android:text="@string/down" />
+        android:text="@string/load"
+        android:onClick="myClickHandler"/>
 
-    </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/grab1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.01"
-                android:onClick="myClickHandler"
-                android:text="@string/grab1" />
-            <Button
-                android:id="@+id/grab2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.01"
-                android:onClick="myClickHandler"
-                android:text="@string/grab2" />
-
-        <Button
-                android:id="@+id/drop1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.01"
-                android:onClick="myClickHandler"
-                android:text="@string/drop1" />
-
-            <Button
-                android:id="@+id/drop2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.01"
-                android:onClick="myClickHandler"
-                android:text="@string/drop2" />
 
             </LinearLayout>
     </LinearLayout>
