@@ -18,7 +18,7 @@
     <string name="myView">My View</string>
     <string name="myThings">My Things</string>
     <string name="action_settings">Action</string>
-    <string name="load">Load</string>
+    <string name="load">Load Game</string>
     <string name="hard">New Game (Hard)</string>
     <string name="normal">New Game (Normal)</string>
     <string name="saveGame">Save Game</string>
