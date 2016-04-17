@@ -96,30 +96,27 @@ public class NormalActivity extends Activity {
 
         case R.id.grab1:
             model.grab(1);
-            Toast.makeText(getApplicationContext(), "Grabbed 1st item", Toast.LENGTH_SHORT);
             myItems.setText(model.getItems());
             break;
 
 
         case R.id.grab2:
             model.grab(2);
-            Toast.makeText(getApplicationContext(), "Grabbed 2nd item", Toast.LENGTH_SHORT);
             myItems.setText(model.getItems());
             break;
 
 
         case R.id.drop1:
             model.drop(1);
-            Toast.makeText(getApplicationContext(), "Dropped 1st item", Toast.LENGTH_SHORT);
             myItems.setText(model.getItems());
             break;
 
 
         case R.id.drop2:
             model.drop(2);
-            Toast.makeText(getApplicationContext(), "Dropped 2nd item", Toast.LENGTH_SHORT);
             myItems.setText(model.getItems());
             break;
+
 
  		}
 
