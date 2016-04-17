@@ -41,14 +41,17 @@ public class MainActivity extends Activity {
         switch (view.getId()) {
 
             case R.id.newGameNormal:
-                Intent intent = new Intent(this, DisplayMessageActivity.class);
+                Intent n = new Intent(this, NormalActivity.class);
+                startActivity(n);
                 break;
 
             case R.id.newGameHard:
-
+                Intent h = new Intent(this, HardActivity.class);
+                startActivity(h);
                 break;
 
             case R.id.loadGame:
+
 
                 break;
         }
