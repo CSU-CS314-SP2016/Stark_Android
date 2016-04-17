@@ -8,8 +8,8 @@ package adventuregame1;
         Josh Foley
         Jason Ritzman
 
-    Updated on March 30 2016
-    - Implemented onCreate, myClickHandler, and legacy AdventureGameView methods
+    Created on April 16 2016
+    - Created intent link from MainActivity
 
 **/
 
