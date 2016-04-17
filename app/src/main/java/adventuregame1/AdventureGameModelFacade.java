@@ -15,6 +15,8 @@ Updated February 4 2016
 - added project comments
 Updated Feburary 17 2016
 - implemented all stub methods for movement and item manipulation
+Updated April 17 2016
+- added some functionality to drop and grab
 
 **/
 
