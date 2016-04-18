@@ -17,6 +17,8 @@ Updated Feburary 17 2016
 - implemented all stub methods for movement and item manipulation
 Updated April 17 2016
 - added some functionality to drop and grab
+Updated April 18 2016
+- added difficulty setting in constructor
 
 **/
 
@@ -35,9 +37,11 @@ public class AdventureGameModelFacade {
 
 	Player thePlayer = new Player();
 
-  public AdventureGameModelFacade() throws IOException { // we initialize
+//CONSTRUCTOR
+  public AdventureGameModelFacade(int difficulty) throws IOException { // we initialize
 	  //Player thePlayer = new Player();
 	  Adventure theCave = new Adventure();
+	  theCave.setDifficulty(difficulty);
 	  Room startRm = theCave.createAdventure();
 	  thePlayer.setRoom(startRm);
 	  roomDesc = thePlayer.look();
