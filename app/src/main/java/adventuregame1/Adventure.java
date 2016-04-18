@@ -185,7 +185,7 @@ public class Adventure {
       }
 
       else if (difficulty > 0){
-          //TODO IMPLEMENT NEW CAVE SYSTEM FOR HARD DIFFICULTY
+
           // The outside:
           Room outside = new Room();
           outside.setDesc(
