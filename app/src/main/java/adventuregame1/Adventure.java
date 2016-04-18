@@ -139,7 +139,7 @@ public class Adventure {
           // Room 8:
           Room r8 = new Room();
           r8.setDesc("A lizard scampers past you, or is it a snake?\n" +
-                  "a narrow passage runs to the east and an evin narrower one\n" +
+                  "a narrow passage runs to the east and an even narrower one\n" +
                   "runs to the west (r8).");
 
           // Room 9:
@@ -175,7 +175,7 @@ public class Adventure {
           r6.addItem(theKey);
 
           // We add a door between r10 and r11:
-          Door theDoor = new Door(r10, r11, theKey);
+          Door theDoor = new Door(r10, r11, theKey, false);
           r10.setSide(5, theDoor);
           r11.setSide(4, theDoor);
 
@@ -260,7 +260,7 @@ public class Adventure {
           // Room 8:
           Room r8 = new Room();
           r8.setDesc("A lizard scampers past you, or is it a snake?\n" +
-                  "a narrow passage runs to the east and an evin narrower one\n" +
+                  "a narrow passage runs to the east and an even narrower one\n" +
                   "runs to the west (r8).");
 
           // Room 9:
@@ -301,7 +301,7 @@ public class Adventure {
           outside.addItem(theOil);
 
           // We add a door between r10 and r11:
-          Door theDoor = new Door(r10, r11, theKey);
+          Door theDoor = new Door(r10, r11, theKey, true);
           r10.setSide(5, theDoor);
           r11.setSide(4, theDoor);
 
