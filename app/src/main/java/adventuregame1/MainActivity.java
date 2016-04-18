@@ -10,6 +10,8 @@ package adventuregame1;
 
     Updated on March 30 2016
     - Implemented onCreate, myClickHandler, and legacy AdventureGameView methods
+    Update on April 16 2016
+    - Reimplemented as a home screen that will link to a new or saved game
 
 **/
 
@@ -18,18 +20,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import java.io.IOException;
 
 
 public class MainActivity extends Activity {
-
-    private AdventureGameModelFacade model;
-
-    String viewText;
-
-    TextView myView;
-    TextView myItems;
 
     /** Called when the activity is first created. */
     @Override
@@ -37,97 +33,28 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //initialize connection to model
-        try {
-            model = new AdventureGameModelFacade();
-        } catch (IOException e) {
-           // System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
-        }
-
-        myView = (TextView) findViewById(R.id.roomView);
-        viewText = model.getView();
-
-        // Get initial room view, and see my items.
-
-         myView.setText(viewText);
-
-         myItems = (TextView) findViewById(R.id.myItems);
-         myItems.setText(model.getItems());
-
-
-
     }
 
  // This method is called at button click because we assigned the name to the
  	// "On Click property" of the button
- 	//TODO
     public void myClickHandler(View view) {
         switch (view.getId()) {
- 		case R.id.goUp:
- 			model.goUp();
-            break;
 
-        case R.id.goDown:
-            model.goDown();
-            break;
+            case R.id.newGameNormal:
+                Intent n = new Intent(this, NormalActivity.class);
+                startActivity(n);
+                break;
 
+            case R.id.newGameHard:
+                Intent h = new Intent(this, HardActivity.class);
+                startActivity(h);
+                break;
 
-        case R.id.goNorth:
-            model.goNorth();
-            break;
-
-
-        case R.id.goSouth:
-            model.goSouth();
-            break;
+            case R.id.loadGame:
 
 
-        case R.id.goEast:
-            model.goEast();
-            break;
-
-
-        case R.id.goWest:
-            model.goWest();
-            break;
-
-
-        case R.id.grab1:
-            model.grab(1);
-            Toast.makeText(getApplicationContext(), "Grabbed 1st item", Toast.LENGTH_SHORT);
-            myItems.setText(model.getItems());
-            break;
-
-
-        case R.id.grab2:
-            model.grab(2);
-            Toast.makeText(getApplicationContext(), "Grabbed 2nd item", Toast.LENGTH_SHORT);
-            myItems.setText(model.getItems());
-            break;
-
-
-        case R.id.drop1:
-            model.drop(1);
-            Toast.makeText(getApplicationContext(), "Dropped 1st item", Toast.LENGTH_SHORT);
-            myItems.setText(model.getItems());
-            break;
-
-
-        case R.id.drop2:
-            model.drop(2);
-            Toast.makeText(getApplicationContext(), "Dropped 2nd item", Toast.LENGTH_SHORT);
-            myItems.setText(model.getItems());
-            break;
-
- 		}
-
-        displayCurrentInfo();
- 	}
-
-    private void displayCurrentInfo(){
-        myView.setText(model.getView());
-        myItems.setText(model.getItems());
-
+                break;
+        }
     }
 
 

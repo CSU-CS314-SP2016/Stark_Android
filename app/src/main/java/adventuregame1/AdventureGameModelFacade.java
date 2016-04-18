@@ -15,6 +15,8 @@ Updated February 4 2016
 - added project comments
 Updated Feburary 17 2016
 - implemented all stub methods for movement and item manipulation
+Updated April 17 2016
+- added some functionality to drop and grab
 
 **/
 
@@ -79,13 +81,12 @@ public class AdventureGameModelFacade {
 		if(itemToGrab!=null){
 		    thePlayer.pickUp(itemToGrab);
 		    roomDesc = thePlayer.look();
-		    roomDesc+="\nYou grabbed " + itemToGrab.toString();
+		    roomDesc+="\nYou grabbed " + itemToGrab.toString() + ".";
 		}
 		else{
-			roomDesc+="\nNo item to grab";
+			roomDesc+="\nNo item to grab.";
 		}
 	} catch (IOException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}  
 
@@ -103,6 +104,11 @@ public class AdventureGameModelFacade {
 		   }
 	   thePlayer.drop(itemNum);
 	   roomDesc = thePlayer.look();
+	   if (itemNum == 1){
+		   roomDesc+="\nDropped 1st item.";
+	   } else if (itemNum == 2){
+		   roomDesc+="\nDropped 2nd item.";
+	   }
   }
   
   // You need to finish these getView and getItems methods.

@@ -15,6 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="adventuregame1.NormalActivity"
+            android:parentActivityName="adventuregame1.MainActivity">
+
+
+        </activity>
+        <activity android:name="adventuregame1.HardActivity"
+            android:parentActivityName="adventuregame1.HardActivity">
+
+        </activity>
     </application>
 
 </manifest>
