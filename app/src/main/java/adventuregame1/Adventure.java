@@ -295,6 +295,10 @@ public class Adventure {
           theKey.setDesc("A shiny gold key.");
           r6.addItem(theKey);
 
+          // Create oil and put outside
+          Oil theOil = new Oil();
+          theOil.setDesc("Greasy oil.");
+
           // We add a door between r10 and r11:
           Door theDoor = new Door(r10, r11, theKey);
           r10.setSide(5, theDoor);
