@@ -70,7 +70,6 @@ public class Door implements CaveSite {
          if (p.showMyThings().contains("Oily oil")) {
              System.out.println("You oiled the door!");
              oiledDoor();
-         } else {
              if (p.haveItem(myKey)) {
                  System.out.println("Your key works! The door creaks open,");
                  System.out.println("and slams behind you after you pass through.");
@@ -81,9 +80,11 @@ public class Door implements CaveSite {
                  System.out.println("Sorry.");
              }
          }
+         else {
+             System.out.println("No Oil!");
+         }
      }
-
-     if (!isRusty()) {
+     else if (!isRusty()) {
          if (p.haveItem(myKey)) {
              System.out.println("Your key works! The door creaks open,");
              System.out.println("and slams behind you after you pass through.");
