@@ -13,8 +13,11 @@ package adventuregame1;
 	 and move from the outside of the door (outSite) to the
 	 inside of the door (inSite).
 	 
-	 Updated February 4 2015
+	 Updated February 4 2016
 	 - added project comments
+
+     Updated April 18 2016
+     - added boolean rusty, isRusty(), oiledDoor()
 **/
 
 /** 
