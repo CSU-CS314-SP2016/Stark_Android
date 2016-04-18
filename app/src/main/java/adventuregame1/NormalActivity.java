@@ -41,7 +41,7 @@ public class NormalActivity extends Activity {
 
         //initialize connection to model
         try {
-            model = new AdventureGameModelFacade();
+            model = new AdventureGameModelFacade(0);
         } catch (IOException e) {
            // System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
         }
