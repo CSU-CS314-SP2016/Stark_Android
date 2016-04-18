@@ -1,0 +1,26 @@
+User Story 2: As a CS314 student, I want to add new objects and functionality, so that there is a difference between "Normal" and "Hard"
+	
+Acceptance Criteria (AC):
+	1. The new interface works on the Android platform.
+	2. The game retains its Model-View separation design: All 'view' software only accesses functional parts of the game through the AdventureGameModelFacade class.
+	3. New tests for your Android Java code are written and pass. Any defects they find are fixed.
+	4. All previous JUnit tests are run and pass.
+	5. Meet 'Definition of Done' (DoD), below.
+
+Tasks: 10 SP (estimation/actual time)
+    (2 hour/1 hour) Implement oil class (Jason Ritzman)
+    (3 hours/1 hour) Implement rust on doors (Jason Ritzman)
+    (6 hours/? hours) Implement Earthquake method (All)
+    (3 hours/? hours) Apply Abstract Factory pattern (All)
+
+Definition of Done (DoD):
+For all user stories:
+	GitHub main branch code runs with no warnings and a user can execute all commands at least using the GUI.
+	All code changes are reviewed before being merged onto the main branch (see A1, tutorial 5 for instructions on the GitHub Pull Request Code Review System you must use for reviews)
+	All code changes are merged into the main branch
+For CS314 development:
+	All work is done on individual branches with frequent commits and pushes to GitHub before being merged onto the main branch.
+	Commit messages include user story and task
+	All user stories and point estimates are in GitHub
+	All tasks and time estimates and actual time taken are in GitHub
+	The overview.txt file for A5 has all required items in it

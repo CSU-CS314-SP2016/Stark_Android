@@ -80,12 +80,15 @@ public class AdventureGameModelFacade {
   
   public void grab(int itemNum){
 	  Item itemToGrab;
-	try {
-		itemToGrab = choosePickupItem(thePlayer,itemNum);
-		if(itemToGrab!=null){
-		    thePlayer.pickUp(itemToGrab);
-		    roomDesc = thePlayer.look();
-		    roomDesc+="\nYou grabbed " + itemToGrab.toString() + ".";
+	  roomDesc = thePlayer.look();
+	  if (thePlayer.handsFull()){
+		  roomDesc+="\nYour hand are full!";
+	  } else
+		try {
+			itemToGrab = choosePickupItem(thePlayer,itemNum);
+			if(itemToGrab!=null){
+		    	thePlayer.pickUp(itemToGrab);
+		    	roomDesc+="\nYou grabbed " + itemToGrab.toString() + ".";
 		}
 		else{
 			roomDesc+="\nNo item to grab.";
@@ -126,9 +129,14 @@ public class AdventureGameModelFacade {
   
   private Item choosePickupItem(Player p,  int keyB) throws IOException{
 	  Item[] contentsArray = (p.getLoc()).getRoomContents(); 
-	 // System.out.println(contentsArray.length);
+	  System.out.println(contentsArray.length);
+	  System.out.println(keyB);
 	  if(contentsArray.length == 0){
 		  return null;
+	  }
+	  else if (contentsArray.length < keyB){
+		  p.getLoc().removeItem(contentsArray[keyB-2]);
+		  return contentsArray[keyB-2];
 	  }
 	  p.getLoc().removeItem(contentsArray[keyB-1]);
 	 // System.out.println(contentsArray.length);
