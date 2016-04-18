@@ -8,15 +8,14 @@ Specific contributions by each person:
 	- Imported project into a new GitHub repository for Android development (1 hour)
 	- Redesigned GUI specified in activity_main.xml (2 hours)
 	- Implemented MainActivity.java methods for button behavior (11 hours)
-	Jason Ritzman - Installed Android Studio, Java SDK 1.7, and ran through Building Your First App Tutorial (2 hours)
-	- Added Github for Windows and configured for Android Studio (1 hour)
-	- Imported Stark_Android project from zip file for functionality in Android Studio (1 hour)
-	- Created Branch and edited Overview.txt, A4-US-1A.txt, A4-US-1B.txt (2 hours)
+	Jason Ritzman - Added oil item, rusty door, and hard level (4 hours)
+	- Fixed Grab2 button issue and added handFull check (1 hour)
+	- Edited Overview.txt and added A5-US-1A.txt, A4-US-1B.txt (2 hours)
 	Josh Foley  - Linked buttons of the gui to run the original java code. Got game running on android phone.
 
 Time (hours) spent by each person on this assignment:
 	Zach Fuller - 20 hours
-	Jason Ritzman - 8 hours
+	Jason Ritzman - 7 hours
 	Josh Foley -	15 hours
 
 CSU Honor Pledge:
@@ -25,21 +24,15 @@ I have not given, received, or used any unauthorized assistance.
 	Jason Ritzman
 	Josh Foley
 
+- Description of the mechanism that you used to
+     support "levels of difficulty". 2 pts
+     Explain how you implemented and used the
+     Abstract Factory design pattern.
+- Description of the other enhancements that your team
+     has made to the Adventure Game. 1 pt
+- Describe what a user needs to know to play the game. 1 pt.
+- Any special instructions about running your program. 1 pt.
+
 - Test information: 1 pt
   - Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
   - Total number of tests run - 0, number passed - NA, number of defects found - NA, number of defects fixed - NA
-
-GUI Evaluation:
-Goal 1: Efficiency of the user interacting with the user interface
-  to complete a task based on typical tasks: 5 points
-  - Question 1: As a user, what could be improved in regards to player information?
-    Answer/Assessment: Information about adjacent rooms displayed in the GUI would be helpful in navigating the cave system.
-  - Question 2: What could be improved about grabbing and dropping items?
-    Answer/Assessment: Instead of having 4 separate buttons, have 2 buttons with further options given when clicked.
-
-Goal 2: Effectiveness of the user interface in causing the program to
-  follow the user's intent based on typical tasks: 5 points
-  - Question 1: Is the behavior when dropping or grabbing items that don't exist desirable behavior?
-    Answer/Assessment: Toast messages are a nice touch - better than posting to the TextView.
-  - Question 2: What could be improved about the user interface in regards to movement and item manipulation?
-    Answer/Assessment: Directional buttons could be arranged in a fashion that makes more graphical sense
