@@ -298,6 +298,7 @@ public class Adventure {
           // Create oil and put outside
           Oil theOil = new Oil();
           theOil.setDesc("Greasy oil.");
+          outside.addItem(theOil);
 
           // We add a door between r10 and r11:
           Door theDoor = new Door(r10, r11, theKey);
