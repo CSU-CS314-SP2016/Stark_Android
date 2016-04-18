@@ -10,12 +10,12 @@ Specific contributions by each person:
 	- Implemented MainActivity.java methods for button behavior (11 hours)
 	Jason Ritzman - Added oil item, rusty door, and hard level (4 hours)
 	- Fixed Grab2 button issue and added handFull check (1 hour)
-	- Edited Overview.txt and added A5-US-1A.txt, A4-US-1B.txt (2 hours)
+	- Edited Overview.txt and added A5-US-1A.txt, A4-US-1B.txt (1 hour)
 	Josh Foley  - Linked buttons of the gui to run the original java code. Got game running on android phone.
 
 Time (hours) spent by each person on this assignment:
 	Zach Fuller - 20 hours
-	Jason Ritzman - 7 hours
+	Jason Ritzman - 6 hours
 	Josh Foley -	15 hours
 
 CSU Honor Pledge:
