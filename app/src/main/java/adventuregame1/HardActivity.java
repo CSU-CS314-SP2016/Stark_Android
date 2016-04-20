@@ -14,6 +14,7 @@ package adventuregame1;
 **/
 
 import android.app.Activity;
+import android.util.Log;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -22,7 +23,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -37,6 +40,8 @@ public class HardActivity extends Activity {
 
     TextView myView;
     TextView myItems;
+
+    String[] saveItems = {};
 
     /** Called when the activity is first created. */
     @Override
@@ -124,18 +129,24 @@ public class HardActivity extends Activity {
 
 
          case R.id.saveGame:
-             String filename = "saveGame";
-             String string = "Hello world!";
-             FileOutputStream outputStream;
 
-             try {
-                 outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
-                 outputStream.write(string.getBytes());
-                 outputStream.close();
+             this.saveGame("saveGame.txt");
 
-             } catch (Exception e) {
-                 e.printStackTrace();
-             }
+
+//             File path = Context.getFilesDir();
+//
+//             String filename = "saveGame";
+//             String string = "Hello world!";
+//             AssetManager am = ;
+//
+//             try {
+//                 OutputStreamWriter outputStreamWriter = new OutputStreamWriter(Context.openFileOutput)
+//                 outputStreamWriter.write(string.getBytes());
+//                 outputStream.close();
+//
+//             } catch (Exception e) {
+//                 e.printStackTrace();
+//             }
 
 
              break;
@@ -148,6 +159,53 @@ public class HardActivity extends Activity {
     private void displayCurrentInfo(){
         myView.setText(model.getView());
         myItems.setText(model.getItems());
+
+    }
+
+    private void setSaveItems(){
+        if (model.thePlayer.numItemsCarried() > 0){
+            if (model.thePlayer.numItemsCarried() == 1){
+                saveItems[0] = model.thePlayer.myThings[0].toString();
+            }
+            if (model.thePlayer.numItemsCarried() == 2){
+                saveItems[0] = model.thePlayer.myThings[0].toString();
+                saveItems[1] = model.thePlayer.myThings[1].toString();
+            }
+        }
+    }
+
+    private void saveGame(String filename){
+        setSaveItems();
+
+//        File path = new File(getFilesDir(),"saveFile");
+//        path.mkdirs();
+//        File saveFile = new File(path, "saveGame.txt");
+//
+//        try {
+//            FileOutputStream fos = openFileOutput("saveGame.txt", Context.MODE_PRIVATE);
+//
+//            fos.write(model.theCave.difficulty);
+//            fos.write(saveItems[0].getBytes());
+//            fos.write(saveItems[1].getBytes());
+//            fos.write(model.thePlayer.getLoc().name.getBytes());
+//
+//            fos.close();
+//
+//        } catch (IOException e) {
+//
+//        }
+
+//        try {
+//            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(openFileOutput(filename, Context.MODE_PRIVATE));
+//            outputStreamWriter.write(model.theCave.difficulty);
+//            outputStreamWriter.write(fileContents[0] + "-" + fileContents[1]);
+//            outputStreamWriter.write(model.thePlayer.getLoc().name);
+//            outputStreamWriter.close();
+//        }
+//        catch (IOException e) {
+//            Log.e("Exception", "File write failed: " + e.toString());
+//        }
+
 
     }
 

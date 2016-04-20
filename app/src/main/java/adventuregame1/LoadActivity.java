@@ -65,8 +65,6 @@ public class LoadActivity extends Activity {
          myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
 
-
-
     }
 
  // This method is called at button click because we assigned the name to the
@@ -128,7 +126,7 @@ public class LoadActivity extends Activity {
 
         //TODO SAVE IMPLEMENTATION WITH BUTTON
         case R.id.saveGame:
-            model.saveGame();
+
             break;
 
 

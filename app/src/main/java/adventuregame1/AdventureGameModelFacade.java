@@ -152,14 +152,5 @@ public class AdventureGameModelFacade {
 	  return contentsArray[keyB-1];
 
 }
-	//TODO IMPLEMENT SAVE GAME
-	public void saveGame(){
-
-
-
-
-
-		//TODO NEEDS TO SAVE theCave.difficulty, thePlayer's items, and thePlayer.myLoc
-	}
 
 }

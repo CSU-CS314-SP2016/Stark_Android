@@ -4,17 +4,17 @@ Team members:
 	Josh Foley
 
 Specific contributions by each person:
-	Zach Fuller - Refactored and overhauled project architecture for use in Android Studio (6 hours)
-	- Imported project into a new GitHub repository for Android development (1 hour)
-	- Redesigned GUI specified in activity_main.xml (2 hours)
-	- Implemented MainActivity.java methods for button behavior (11 hours)
+	Zach Fuller - Rehauled architecture for multiple Activity screens (7 hours)
+	- Edited multiple Adventure* classes to handle difficulty (2 hours)
+	- Assisted with load and save implementation (5 hours)
+	- Edited Overview.txt (1 hour)
 	Jason Ritzman - Added oil item, rusty door, and hard level (4 hours)
 	- Fixed Grab2 button issue and added handFull check (1 hour)
 	- Edited Overview.txt and added A5-US-1A.txt, A4-US-1B.txt (1 hour)
-	Josh Foley  - Linked buttons of the gui to run the original java code. Got game running on android phone.
+	Josh Foley - Linked buttons of the gui to run the original java code. Got game running on android phone.
 
 Time (hours) spent by each person on this assignment:
-	Zach Fuller - 20 hours
+	Zach Fuller - 15 hours
 	Jason Ritzman - 6 hours
 	Josh Foley -	15 hours
 
@@ -24,15 +24,28 @@ I have not given, received, or used any unauthorized assistance.
 	Jason Ritzman
 	Josh Foley
 
-- Description of the mechanism that you used to
-     support "levels of difficulty". 2 pts
-     Explain how you implemented and used the
-     Abstract Factory design pattern.
-- Description of the other enhancements that your team
-     has made to the Adventure Game. 1 pt
-- Describe what a user needs to know to play the game. 1 pt.
+New functionality: Difficulty setting
+- To increase the difficulty in Hard mode, we have added an oil mechanism - the final door
+containing the gold bars will not open without oil.
+- We have also added a room that you will end a player's game if entered.
+
+New functionality: Save button
+- The player can now save their previous game information and load it
+the next time they launch the application
+
+- The Abstract Factory pattern has been applied with the CaveSite interface
+and the classes Room and Wall. The CaveSite is an abstract product that allows
+the creation and linkage of Rooms and Walls.
+
+How To Guide for New Players
+- Navigate through the cave to find hidden treasure
+- Hard mode has increased difficulty
+	> Rusty doors will not open without Oil
+	> Be careful of the false treasure room...
+- To load the previous game, press Load button on home screen
+
+//TODO
 - Any special instructions about running your program. 1 pt.
 
-- Test information: 1 pt
-  - Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
-  - Total number of tests run - 0, number passed - NA, number of defects found - NA, number of defects fixed - NA
+- Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
+- Total number of tests run - 0, number passed - NA, number of defects found - NA, number of defects fixed - NA
