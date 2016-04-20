@@ -14,13 +14,17 @@ package adventuregame1;
 **/
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 public class HardActivity extends Activity {
@@ -118,7 +122,25 @@ public class HardActivity extends Activity {
             myItems.setText(model.getItems());
             break;
 
- 		}
+
+         case R.id.saveGame:
+             String filename = "saveGame";
+             String string = "Hello world!";
+             FileOutputStream outputStream;
+
+             try {
+                 outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+                 outputStream.write(string.getBytes());
+                 outputStream.close();
+
+             } catch (Exception e) {
+                 e.printStackTrace();
+             }
+
+
+             break;
+        }
+
 
         displayCurrentInfo();
  	}

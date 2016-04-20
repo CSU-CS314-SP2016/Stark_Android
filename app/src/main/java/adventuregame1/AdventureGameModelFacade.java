@@ -22,7 +22,17 @@ Updated April 18 2016
 
 **/
 
+import android.content.Context;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
 
 public class AdventureGameModelFacade {
 
@@ -144,6 +154,11 @@ public class AdventureGameModelFacade {
 }
 	//TODO IMPLEMENT SAVE GAME
 	public void saveGame(){
+
+
+
+
+
 		//TODO NEEDS TO SAVE theCave.difficulty, thePlayer's items, and thePlayer.myLoc
 	}
 
