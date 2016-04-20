@@ -43,17 +43,17 @@ public class LoadActivity extends Activity {
 
         //initialize connection to model
         //TODO link difficulty to the text file
-        try {
-            model = new AdventureGameModelFacade(*DIFFICULTY FROM TXT FILE*);
-        } catch (IOException e) {
+      //  try {
+      //      model = new AdventureGameModelFacade(*DIFFICULTY FROM TXT FILE*);
+       // } catch (IOException e) {
            // System.out.println("Error in AdventureGameModelFacade() call from AdventureGameView.java");
-        }
+      //  }
 
         //TODO link new player up to saved player
         //LOCATION
-        model.thePlayer.setLoc(*ROOM LOCATION FROM TXT FILE*);
+      //  model.thePlayer.setLoc(*ROOM LOCATION FROM TXT FILE*);
         //INVENTORY
-        model.thePlayer.pickUp(*ITEMS FROM TXT FILE*); //might have to write a string to item method
+       // model.thePlayer.pickUp(*ITEMS FROM TXT FILE*); //might have to write a string to item method
 
         myView = (TextView) findViewById(R.id.roomView);
         viewText = model.getView();
@@ -64,8 +64,6 @@ public class LoadActivity extends Activity {
 
          myItems = (TextView) findViewById(R.id.myItems);
          myItems.setText(model.getItems());
-
-
 
     }
 
@@ -128,7 +126,7 @@ public class LoadActivity extends Activity {
 
         //TODO SAVE IMPLEMENTATION WITH BUTTON
         case R.id.saveGame:
-            model.saveGame();
+
             break;
 
 

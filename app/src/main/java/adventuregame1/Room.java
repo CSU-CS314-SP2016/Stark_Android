@@ -27,13 +27,15 @@ import java.util.ListIterator;
 
 public class Room implements CaveSite {
 
+  public String name;
   private String description;
 
   private CaveSite[] side = new CaveSite[6];
 
   private ArrayList<Item> contents = new ArrayList<Item>();
 
-  public Room() {
+  public Room(String n) {
+    name = n;
     side[0] = new Wall();
     side[1] = new Wall();
     side[2] = new Wall();

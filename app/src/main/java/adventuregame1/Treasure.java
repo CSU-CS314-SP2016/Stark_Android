@@ -26,5 +26,6 @@ package adventuregame1;
 // class Treasure
 
 public class Treasure extends Item {
+
 }
 
