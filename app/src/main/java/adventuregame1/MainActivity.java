@@ -51,8 +51,8 @@ public class MainActivity extends Activity {
                 break;
 
             case R.id.loadGame:
-
-
+                Intent l = new Intent(this, LoadActivity.class);
+                startActivity(l);
                 break;
         }
     }

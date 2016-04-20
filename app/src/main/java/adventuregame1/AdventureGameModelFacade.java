@@ -36,11 +36,10 @@ public class AdventureGameModelFacade {
 	public String message = "";
 
 	Player thePlayer = new Player();
+	Adventure theCave = new Adventure();
 
 //CONSTRUCTOR
   public AdventureGameModelFacade(int difficulty) throws IOException { // we initialize
-	  //Player thePlayer = new Player();
-	  Adventure theCave = new Adventure();
 	  theCave.setDifficulty(difficulty);
 	  Room startRm = theCave.createAdventure();
 	  thePlayer.setRoom(startRm);
@@ -143,5 +142,9 @@ public class AdventureGameModelFacade {
 	  return contentsArray[keyB-1];
 
 }
+	//TODO IMPLEMENT SAVE GAME
+	public void saveGame(){
+		//TODO NEEDS TO SAVE theCave.difficulty, thePlayer's items, and thePlayer.myLoc
+	}
 
 }
