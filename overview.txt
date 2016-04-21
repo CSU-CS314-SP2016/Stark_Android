@@ -12,7 +12,7 @@ Specific contributions by each person:
 	- Fixed Grab2 button issue and added handFull check (1 hour)
 	- Edited Overview.txt and added A5-US-1A.txt, A4-US-1B.txt (1 hour)
 	- Created Class UML and Map UML (3 hours)
-	- Added test for Oil (2 hours)
+	- Tried to add test for Oil, unable to test (2 hours)
 	Josh Foley - Implemented save and tested flow of game
 
 Time (hours) spent by each person on this assignment:
@@ -49,5 +49,5 @@ How To Guide for New Players
 //TODO
 - Any special instructions about running your program. 1 pt.
 
-- Number of new tests written - 0, number of defects found - 0, number of defects fixed - 0
+- Number of new tests written - 1, number of defects found - 0, number of defects fixed - 0
 - Total number of tests run - 0, number passed - NA, number of defects found - NA, number of defects fixed - NA
